@@ -8,8 +8,9 @@ class LinkList extends Component {
       const {url, clicks, token } = link;
       const shortLink = `http://localhost:3000/${token}`;
 
+      var backupString = Math.random().toString(36).slice(-6);
       return (
-          <tr className="" key={token}>
+          <tr className="" key={token + backupString}>
             <td>{url}</td>
             <td><a href={shortLink}>{shortLink}</a></td>
             <td>{clicks}</td>
