@@ -1,0 +1,22 @@
+.header {
+  display:block;
+  padding:15px;
+  background:#181818;
+  min-height:50px;
+  @extend .clearfix;
+
+  .navbar{
+    margin-bottom:0;
+
+    &-brand{
+      padding:0 15px;
+    }
+  }
+
+  a{
+    color:white;
+    line-height:50px;
+    font-family:sans-serif;
+    margin-right:15px;
+  }
+}
